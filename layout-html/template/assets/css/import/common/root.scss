@@ -1,0 +1,26 @@
+:root {
+	/* COLORS */
+	--color-brand: #{$brand};
+	--color-white: #{$white};
+	--color-black: #{$black};
+	--color-grey: #{$grey};
+
+	// -- Common --
+	--color-success: #{$success};
+	--color-warning: #{$warning};
+	--color-danger: #{$danger};
+	--color-outline: #{$outline};
+	--color-disabled: #{$text-disabled};
+	--color-placeholder: #{$placeholder};
+
+	// -- Background color --
+	--bg-primary: #{$bg-primary};
+	--bg-disabled: #{$bg-disabled};
+	--bg-overlay: #{$bg-overlay};
+
+
+	/* TYPOGRAPHY */
+	--font-family: #{$font-family};
+	--font-size-medium: #{$font-size-medium};
+	--line-height-medium: #{$line-height-medium};
+}

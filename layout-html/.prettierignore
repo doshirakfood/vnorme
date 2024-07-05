@@ -1,0 +1,16 @@
+**/assets
+**/libs
+.github
+package.json
+package-lock.json
+webpack.config.js
+README.md
+data.json
+.babelrc
+.eslintrc.js
+.prettierignore
+.prettierrc.json
+.eslintrc.json
+.editorconfig
+.stylelintrc.json
+gulpfile.js

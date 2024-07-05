@@ -1,0 +1,17 @@
+{
+	"tabWidth": 4,
+	"semi": true,
+	"printWidth": 120,
+	"singleAttributePerLine": true,
+	"singleQuote": false,
+	"bracketSpacing": true,
+	"bracketSameLine": false,
+	"endOfLine": "lf",
+	"plugins": ["prettier-plugin-jinja-template"],
+	"overrides": [
+		{
+			"files": "*.html",
+			"options": { "parser": "jinja-template" }
+		}
+	]
+}

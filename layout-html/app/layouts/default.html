@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% include "head.html" %}
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        <main class="main">
+            {% block main %}{% endblock %}
+        </main>
+
+        {% include "svg-sprite.html" %}
+        {% block footer %}{% endblock %}
+    </body>
+</html>

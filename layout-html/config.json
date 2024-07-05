@@ -1,0 +1,73 @@
+{
+    "start": "index.html",
+    "src":   "app",
+    "build": "dist",
+    "template": "template",
+    "indent_size": 4,
+
+    "source": {
+        "html": {
+            "main": "./app/pages/**/*.html",
+            "core": [
+                "./app/layouts/**/*.html",
+                "./app/components/**/*.html"
+            ],
+            "templates": [
+                "./app/layouts",
+                "./app/components",
+                "./app/assets/img"
+            ]
+        },
+
+        "css": {
+            "main": "./app/assets/css/*.scss",
+            "import": [
+                "./app/assets/css/import/**/*.*",
+                "./app/components/**/*.scss"
+            ],
+            "libs": "./app/assets/libs/**/*.css"
+        },
+
+        "script": {
+            "main":    "./app/assets/js/*.js",
+            "modules": "./app/assets/js/modules/**/*.js",
+            "libs":    "./app/assets/libs/**/*.js"
+        },
+
+        "images": [
+            "./app/assets/img/**/*.*",
+            "!./app/assets/img/base64/*.*"
+        ],
+
+        "svg": {
+            "sprite":  {
+                "file": "svg-sprite.html",
+                "path": "./app/assets/icons/*.svg",
+                "dest": "./app/components/"
+            }
+        },
+
+        "base64": "../img/base64/",
+
+        "others": [
+            "./app/assets/fonts/**/*.*",
+            "./app/assets/video/**/*.*",
+            "./app/assets/js/static/**/*.js",
+            "./app/assets/data/**/*.json"
+        ]
+    },
+
+    "notifications": {
+        "html": "HTML - всё отлично!",
+        "css":  "CSS - всё отлично!",
+        "script": {
+            "main":   "main.js — всё отлично!",
+            "others": "JS — всё отлично!"
+        },
+
+        "create_tmp": {
+            "succes":  "Шаблон проекта создан",
+            "warning": "Перед созданием шаблона проекта, сохраните текущий проект:"
+        }
+    }
+}

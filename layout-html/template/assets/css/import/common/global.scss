@@ -1,0 +1,31 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+
+	color: var(--color-black);
+	font-size: var(--font-size-medium);
+	font-family: var(--font-family);
+	line-height: var(--line-height-medium);
+
+	background-color: var(--bg-primary);
+
+	fill: var(--color-black);
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.container {
+	width: 100%;
+	max-width: 1320px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 20px;
+}

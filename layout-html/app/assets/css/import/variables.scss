@@ -1,17 +1,28 @@
 /* COLORS */
 
 // -- Main --
-$brand: #0075ff;
+$brand: linear-gradient(225.28deg, #00FFF0 12.52%, #FAFF00 82.05%);
 $white: #fff;
-$black: #222;
-$grey: #f0f0f0;
-$success: #65bb65;
-$warning: #ff8a00;
-$danger: #ea4b48;
+$black: #030303;
+$red: #ff312c;
+$dark: #1d1b20;
+$darker: #262626;
+$grey-dark: #818181;
+$grey-medium: #999;
+$grey-lighter: #f2f2f2;
+$green-dark: #0C9733;
+$green-light: #c2f2d5;
+$green-lighter: #dcffea;
+$hover-primary: #00fff0;
+$hover-secondary: #dcffea;
+$hover-tertiary: #C6E5D3;
+$press-primary: #00e5d8;
+$press-secondary: #c2f2d5;
 
 // -- Background --
 $bg-disabled: #ddd;
-$bg-primary: #fff;
+$bg-primary: #f2f7f4;
+$bg-secondary: #fff;
 $bg-overlay: rgb(95 95 95 / 57%);
 
 // -- State --
@@ -22,8 +33,13 @@ $text-disabled: #9f9f9f;
 
 /* TYPOGRAPHY */
 $font-size-medium: 16px;
-$font-family: 'Helvetica';
-$line-height-medium: 1.2;
+$font-family: "Mulish", 'Helvetica', sans-serif;
+$line-height-medium: 24px;
+
+
+/* OTHERS */
+$grid-columns: 12;
+$grid-gap: 12px;
 
 
 /* MEDIA SCREEN */

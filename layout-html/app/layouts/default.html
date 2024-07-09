@@ -1,15 +1,20 @@
+{% from "button/button.html" import Button %}
+{% from "popup/popup.html" import Popup %}
+{% from "form/form-field.html" import FormField %}
+{% from "tooltip-trigger/tooltip-trigger.html" import Tooltip %}
+
 <!doctype html>
 <html lang="en">
-    <head>
-        {% include "head.html" %}
-        {% block head %}{% endblock %}
-    </head>
-    <body>
-        <main class="main">
-            {% block main %}{% endblock %}
-        </main>
+	<head>
+		{% include "head.html" %}
+		{% block head %}
+		{% endblock %}
+	</head>
+	<body>
+		<main class="main">{% block main %}{% endblock %}</main>
 
-        {% include "svg-sprite.html" %}
-        {% block footer %}{% endblock %}
-    </body>
+		{% include "svg-sprite.html" %}
+		{% block footer %}
+		{% endblock %}
+	</body>
 </html>

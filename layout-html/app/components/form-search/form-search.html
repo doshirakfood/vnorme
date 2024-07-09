@@ -1,0 +1,19 @@
+<form
+	class="form-search"
+	action=""
+>
+	<div class="form-search__row">
+		{{
+			FormField(
+				'search',
+				'Найти специалиста',
+				'search-doctor',
+				true,
+				null,
+				'form-search__col form-search__col--left'
+			)
+		}}
+
+		<div class="form-search__col form-search__col--right">{{ Button('Найти', 'submit') }}</div>
+	</div>
+</form>

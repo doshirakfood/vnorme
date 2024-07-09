@@ -1,0 +1,32 @@
+{% from "button/button.html" import Button %}
+
+{% macro Popup(extraClass='', id=null) %}
+	<div
+		class="popup {{ extraClass }}"
+		id="{{ id }}"
+	>
+		<div class="popup__header">
+			{{
+				Button(
+					'Назад',
+					'button',
+					'white',
+					'popup__back',
+					'#icon-arrow-simple'
+				)
+			}}
+
+			{{
+				Button(
+					'',
+					'button',
+					'white',
+					'popup__close',
+					'#icon-close'
+				)
+			}}
+		</div>
+
+		<div class="popup__main">{{ caller() }}</div>
+	</div>
+{% endmacro %}

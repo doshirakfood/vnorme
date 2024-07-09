@@ -1,0 +1,102 @@
+@mixin scroll-shadow-x($bcgColor) {
+	background-color: $bcgColor;
+	background-image: linear-gradient(to right, $bcgColor, $bcgColor), linear-gradient(to right, $bcgColor, $bcgColor), linear-gradient(to right, rgb(0 0 0 / 25%), rgb(255 255 255 / 0%)),linear-gradient(to left, rgb(0 0 0 / 25%), rgb(255 255 255 / 0%));
+	background-repeat: no-repeat;
+	background-position: left center, right center, left center, right center;
+	background-size: 20px 100%, 20px 100%, 10px 100%, 10px 100%;
+	background-attachment: local, local, scroll, scroll;
+}
+
+
+@mixin scroll-shadow-y($bcgColor) {
+	background: linear-gradient($bcgColor 33%, rgb(255 255 255 / 0%)), linear-gradient(rgb(255 255 255 / 0%), $bcgColor 66%) 0 100%, radial-gradient(farthest-side at 50% 0, rgb(34 34 34 / 50%), rgb(0 0 0 / 0%)), radial-gradient(farthest-side at 50% 100%, rgb(34 34 34 / 50%), rgb(0 0 0 / 0%)) 0 100%;
+	background-color: $bcgColor;
+	background-repeat: no-repeat;
+	background-size: 100% 45px, 100% 45px, 100% 15px, 100% 15px;
+	background-attachment: local, local, scroll, scroll;
+}
+
+@mixin hover() {
+	opacity: .9;
+}
+
+@mixin active() {
+	transform: translateY(2px);
+}
+
+@mixin focus() {
+	border-color: var(--color-outline);
+	outline-color: var(--color-outline);
+}
+
+@mixin focus-shadow() {
+	box-shadow: 0 1px 10px 0 rgb(78 78 78);
+}
+
+@mixin link-hover() {
+	color: var(--color-brand);
+	fill: var(--color-brand);
+}
+
+@mixin text-ellipsis() {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+@mixin outline-primary() {
+	outline: 2px solid transparent;
+}
+
+@mixin field-appearance() {
+	width: 100%;
+	padding: 10px 15px;
+	border-color: var(--color-grey);
+	border-style: solid;
+	border-width: 1px;
+	border-radius: $radius-primary;
+	font-size: inherit;
+	font-family: var(--font-family);
+	line-height: normal;
+	outline: 2px solid transparent;
+}
+
+@mixin dropdown-popper() {
+	max-height: 230px;
+	border: 1px solid var(--color-grey);
+	border-radius: $radius-primary;
+	overflow-y: auto;
+	background-color: var(--bg-primary);
+	outline: 0;
+	box-shadow: $shadow-primary;
+}
+
+@mixin arrow-down($var: 15px, $pos: 'right') {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+
+	@if $pos == right {
+		right: $var;
+	} @else if $pos == left {
+		left: $var;
+	}
+
+	display: block;
+	width: 9px;
+	height: 9px;
+	margin: auto 0;
+	background: url('@base64/icon-arrow-down.svg') no-repeat center;
+	background-size: contain;
+	transform-origin: center;
+	transition: all $transition-primary;
+	content: '';
+}
+
+@mixin disabled() {
+	color: var(--color-disabled);
+	background-color: var(--bg-disabled);
+	cursor: auto;
+	pointer-events: none;
+	fill: var(--color-disabled);
+}

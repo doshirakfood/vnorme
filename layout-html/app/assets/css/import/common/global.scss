@@ -7,6 +7,7 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 	margin: 0;
+	padding: 20px 0;
 	color: var(--color-black);
 	font-size: var(--font-size-medium);
 	font-family: var(--font-family);
@@ -21,8 +22,66 @@ body {
 
 .container {
 	width: 100%;
-	max-width: 1320px;
+	max-width: calc(1112px + 32px);
 	margin-right: auto;
 	margin-left: auto;
-	padding: 0 20px;
+	padding: 0 16px;
+}
+
+.section {
+	&-header {
+		margin: 0 0 20px;
+
+		&__row {
+			display: flex;
+			gap: 6px;
+			align-items: center;
+			justify-content: space-between;
+
+			@include media-table-s {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+		}
+	}
+}
+
+.svg-sprite {
+	position: absolute;
+	bottom: 0;
+}
+
+.title, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 48px;
+
+	@include media-table-s {
+		font-size: 24px;
+		line-height: 36px;
+	}
+}
+
+.subtitle {
+	margin: 0;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 36px;
+
+	&--medium {
+		color: var(--color-grey-medium);
+	}
+
+	@include media-table-s {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+input, select {
+	font-weight: 400;
+	font-size: 16px;
+	font-family: var(--font-family);
+	line-height: 24px;
 }

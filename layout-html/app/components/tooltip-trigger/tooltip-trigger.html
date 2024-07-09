@@ -1,0 +1,10 @@
+{% macro Tooltip(text, color='grey-darker', extraClass='') %}
+	<button
+		class="tooltip-trigger btn btn--{{ color }} {{ extraClass }}"
+		data-tooltip-text="{{ text }}"
+	>
+		<span class="btn__wrapper">
+			<svg class="btn__icon"><use xlink:href="#icon-info"></use></svg>
+		</span>
+	</button>
+{% endmacro %}

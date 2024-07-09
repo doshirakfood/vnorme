@@ -1,0 +1,76 @@
+<article class="doctor-card">
+	<div class="doctor-card__row">
+		<div class="doctor-card__col doctor-card__col--preview">
+			<img
+				class="doctor-card__picture"
+				src="./img/girl.jpg"
+				alt="Психолог"
+				title="Татьяна Сачкова"
+				loading="lazy"
+			/>
+
+			<span class="doctor-card__price"> Онлайн сессия 3800 {% include "currency/currency.html" %} </span>
+		</div>
+
+		<div class="doctor-card__col doctor-card__col--actions">
+			{{ Button('Записаться', 'button', 'brand', 'doctor-card__action', '#icon-clock') }}
+			{{ Button('Подробнее о психологе', 'button', 'grey-lighter', 'doctor-card__action') }}
+		</div>
+
+		<div class="doctor-card__col doctor-card__col--info">
+			<div class="doctor-card__head">
+				<p
+					class="doctor-card__name subtitle"
+					title="Татьяна Сачкова"
+				>
+					Татьяна Сачкова
+				</p>
+
+				{{
+					Button(
+						'',
+						'button',
+						'white',
+						'doctor-card__favorite',
+						'#icon-favorites'
+					)
+				}}
+			</div>
+
+			<ul class="doctor-card__details">
+				<li class="doctor-card__detail">Опыт 9 лет</li>
+				<li class="doctor-card__detail">Возраст 30 лет</li>
+			</ul>
+		</div>
+
+		<div class="doctor-card__col doctor-card__col--methods">
+			<p class="doctor-card__subtitle">Методики:</p>
+
+			<div class="doctor-card__methods">
+				<div class="doctor-card__method">Клиническая психология {{ Tooltip('Текст') }}</div>
+
+				<div class="doctor-card__method">
+					Принятие и ответственности (АСТ) / Сфокусирование на сострадании (CFT) {{ Tooltip('Текст') }}
+				</div>
+
+				<div class="doctor-card__method">Клиническая психология {{ Tooltip('Текст') }}</div>
+				<div class="doctor-card__method">КПТ/КБТ: Когнитивно-поведенческая терапия {{ Tooltip('Текст') }}</div>
+			</div>
+		</div>
+
+		<div class="doctor-card__col doctor-card__col--requests">
+			<p class="doctor-card__subtitle">Работает с запросами:</p>
+			<ul class="doctor-card__requests">
+				<li class="doctor-card__request">Проблемы со сном</li>
+				<li class="doctor-card__request">Панические атаки</li>
+				<li class="doctor-card__request">Тревога и страхи</li>
+				<li class="doctor-card__request">Поиск себя</li>
+				<li class="doctor-card__request">Чувство одиночества</li>
+				<li class="doctor-card__request">Утрата</li>
+				<li class="doctor-card__request">Упадок сил</li>
+				<li class="doctor-card__request">Непонятные эмоции</li>
+				<li class="doctor-card__request">Пищевое поведение</li>
+			</ul>
+		</div>
+	</div>
+</article>

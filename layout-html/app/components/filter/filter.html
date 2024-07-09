@@ -1,0 +1,200 @@
+{%
+	set filterMainArray = [
+		'😴 Проблемы со сном',
+		'💑 Отношения с партнёром',
+		'🌯 Пищевое поведение',
+		'🔎 Поиск себя',
+		'😞 Упадок сил',
+		'😨 Панические атаки',
+		'😔 Чувство одиночества',
+		'🤯 Непонятные эмоции'
+	]
+%}
+{%
+	set filterMethodArray = [
+		'Гештальт-терапия',
+		'Арт-терапия',
+		'Принятие и ответственности (АСТ) / Сфокусирование на сострадании (CFT)',
+		'Психодинамические подходы',
+		'КПТ/КБТ: Когнитивно-поведенческая терапия',
+		'Клиническая психология'
+	]
+%}
+{%
+	set filterAgeArray = [
+		'от 8 до 12 лет',
+		'от 12 до 16 лет',
+		'от 16 до 20 лет',
+		'от 25 до 45 лет'
+	]
+%}
+
+<div class="filter">
+	<form
+		action=""
+		class="filter__form filter__form--desktop"
+	>
+		<div class="filter__row">
+			{% for filter in filterMainArray %}
+				<label
+					class="filter-choose filter__col"
+					for="filter-desktop-{{ loop.index }}"
+				>
+					<input
+						id="filter-desktop-{{ loop.index }}"
+						type="checkbox"
+						class="filter-choose__field"
+						value="{{ filter }}"
+					/>
+
+					<span class="filter-choose__wrapper">
+						<span class="filter-choose__replace"></span>
+						<span class="filter-choose__name">{{ filter }}</span>
+					</span>
+				</label>
+			{% endfor %}
+
+			{{
+				Button(
+					'Сбросить фильтры',
+					'reset',
+					'green-lighter',
+					'filter__col filter__reset'
+				)
+			}}
+		</div>
+	</form>
+
+	{% call Popup() %}
+		<form class="filter__form filter__form--mobile">
+			<div class="filter__box">
+				<p class="filter__title">Что вас беспокоит</p>
+
+				<div class="filter__row">
+					{% for filter in filterMainArray %}
+						<label
+							class="filter-choose filter__col"
+							for="filter-anxiety-{{ loop.index }}"
+						>
+							<input
+								id="filter-anxiety-{{ loop.index }}"
+								type="checkbox"
+								class="filter-choose__field"
+								value="{{ filter }}"
+							/>
+
+							<span class="filter-choose__wrapper">
+								<span class="filter-choose__replace"></span>
+								<span class="filter-choose__name">{{ filter }}</span>
+							</span>
+						</label>
+					{% endfor %}
+				</div>
+			</div>
+
+			<div class="filter__box">
+				<p class="filter__title">Методы психолога</p>
+				<div class="filter__row">
+					{% for filter in filterMethodArray %}
+						<label
+							class="filter-choose filter__col"
+							for="filter-method-{{ loop.index }}"
+						>
+							<input
+								id="filter-method-{{ loop.index }}"
+								type="checkbox"
+								class="filter-choose__field"
+								value="{{ filter }}"
+							/>
+
+							<span class="filter-choose__wrapper">
+								<span class="filter-choose__replace"></span>
+								<span class="filter-choose__name">{{ filter }}</span>
+							</span>
+						</label>
+					{% endfor %}
+				</div>
+			</div>
+
+			<div class="filter__box">
+				<p class="filter__title">Возрастная группа</p>
+				<div class="filter__row">
+					{% for filter in filterAgeArray %}
+						<label
+							class="filter-choose filter__col"
+							for="filter-age-{{ loop.index }}"
+						>
+							<input
+								id="filter-age-{{ loop.index }}"
+								type="checkbox"
+								class="filter-choose__field"
+								value="{{ filter }}"
+							/>
+
+							<span class="filter-choose__wrapper">
+								<span class="filter-choose__replace"></span>
+								<span class="filter-choose__name">{{ filter }}</span>
+							</span>
+						</label>
+					{% endfor %}
+				</div>
+			</div>
+
+			<div class="filter__box filter__box--actions">
+				<div class="filter__triggers">
+					<span class="filter__result"> Нашлось психологов: 2 </span>
+
+					{{
+						Button(
+							'Применить',
+							'submit',
+							'brand',
+							'filter__trigger filter__trigger--submit'
+						)
+					}}
+
+					{{
+						Button(
+							'Сбросить фильтры',
+							'reset',
+							'grey-lighter',
+							'filter__trigger filter__trigger--reset'
+						)
+					}}
+				</div>
+			</div>
+		</form>
+	{%- endcall %}
+
+	<div class="filter__actions">
+		{{
+			Button(
+				'Все фильтры <span class="indicator">5</span>',
+				'button',
+				'white',
+				'filter__action',
+				'#icon-settings'
+			)
+		}}
+
+		{{
+			Button(
+				'Только избранные',
+				'button',
+				'white',
+				'filter__action',
+				'#icon-favorites',
+				'right'
+			)
+		}}
+
+		{{
+			Button(
+				'Сбросить фильтры',
+				'reset',
+				'green-lighter',
+				'filter__action filter__action--reset'
+			)
+		}}
+	</div>
+</div>

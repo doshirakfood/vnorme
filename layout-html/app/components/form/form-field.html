@@ -1,0 +1,23 @@
+{%
+	macro FormField(
+		type='text',
+		placeholder='Введите значение',
+		id=null,
+		required=true,
+		value=null,
+		extraClass=""
+	)
+%}
+	<label
+		class="form__label {{ extraClass }}"
+		for="{{ id }}"
+	>
+		<input
+			type="{{ type }}"
+			id="{{ id }}"
+			class="form__field form__field--{{ type }}"
+			required="{{ required }}"
+			placeholder="{{ placeholder }}"
+		/>
+	</label>
+{% endmacro %}

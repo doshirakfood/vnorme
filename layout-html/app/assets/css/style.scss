@@ -1,3 +1,16 @@
 @import './import/variables';
+@import './import/mixins';
 @import './import/common/root';
 @import './import/common/global';
+
+// COMPONENTS
+@import 'button/button';
+@import 'form/form';
+@import 'popup/popup';
+@import 'currency/currency';
+@import 'doctor-card/doctor-card';
+@import 'form-search/form-search';
+@import 'filter/filter';
+@import 'tooltip-trigger/tooltip-trigger';
+@import 'banners/banners';
+@import 'indicator/indicator';

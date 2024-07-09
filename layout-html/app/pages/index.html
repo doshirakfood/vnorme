@@ -1,8 +1,26 @@
 {% extends 'default.html' %}
 
 {% block main %}
-    <div class="container">
-        <h1>Hello World</h1>
-        <svg><use xlink:href="#icon-example"/></svg>
-    </div>
+	<section class="section container">
+		<div class="section-header">
+			<div class="section-header__row">
+				<div class="section-header__col">
+					<h1 class="title">Выберите подходящего психолога</h1>
+				</div>
+
+				<div class="section-header__col">
+					<p class="subtitle subtitle--medium">7 психологов</p>
+				</div>
+			</div>
+		</div>
+
+		{% include 'form-search/form-search.html' %}
+		{% include 'filter/filter.html' %}
+
+		{% for doctorCard in range(0, 7) %}
+			{% include 'doctor-card/doctor-card.html' %}
+		{% endfor %}
+		{% set bannerCardClass = 'doctor-card' %}
+		{% include 'banners/banner-card.html' %}
+	</section>
 {% endblock %}

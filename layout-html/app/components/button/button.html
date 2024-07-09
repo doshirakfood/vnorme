@@ -1,0 +1,24 @@
+{% macro Button(label, type='button', color='brand', extraClass='', iconName=null, iconPosition='left') %}
+	<button
+		class="btn btn--{{ color }} {{ extraClass }}"
+		type="{{ type }}"
+	>
+		<span class="btn__wrapper">
+			{% if iconName and iconPosition === 'left' %}
+				<svg class="btn__icon">
+					<use xlink:href="{{ iconName }}"></use>
+				</svg>
+			{% endif %}
+
+			{% if label %}
+				<span class="btn__label"> {{ label | safe }} </span>
+			{% endif %}
+
+			{% if iconName and iconPosition === 'right' %}
+				<svg class="btn__icon">
+					<use xlink:href="{{ iconName }}"></use>
+				</svg>
+			{% endif %}
+		</span>
+	</button>
+{% endmacro %}

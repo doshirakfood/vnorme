@@ -1,0 +1,13 @@
+.indicator {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 18px;
+	height: 18px;
+	border-radius: 100px;
+	color: var(--color-white);
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 18px;
+	background-color: var(--color-red);
+}

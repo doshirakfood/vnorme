@@ -1,0 +1,418 @@
+{
+	"posts": [
+		{
+			"id": 1,
+			"title": "hello"
+		}
+	],
+	"users": [
+		{
+			"id": 1,
+			"name": "Татьяна Сачкова",
+			"pic": "https://raw.githubusercontent.com/doshirakfood/vnorme/main/storage/01.jpg",
+			"price": "3800",
+			"info": {
+				"age": 30,
+				"experience": 9
+			},
+			"methods": [
+				{
+					"key": "clinical",
+					"value": "Клиническая психология"
+				}
+			],
+			"problems": [
+				{
+					"key": "sleep",
+					"value": "Проблемы со сном"
+				},
+
+				{
+					"key": "panic-attacks",
+					"value": "Панические атаки"
+				},
+
+				{
+					"key": "self-search",
+					"value": "Поиск себя"
+				},
+
+				{
+					"key": "loneliness",
+					"value": "Чувство одиночества"
+				},
+
+				{
+					"key": "exhaustion",
+					"value": "Упадок сил"
+				},
+
+				{
+					"key": "incomprehensible-emotions",
+					"value": "Непонятные эмоции"
+				},
+
+				{
+					"key": "eating-behavior",
+					"value": "Пищевое поведение"
+				}
+			]
+		},
+
+		{
+			"id": 2,
+			"name": "Елена",
+			"pic": "https://raw.githubusercontent.com/doshirakfood/vnorme/main/storage/02.jpg",
+			"price": "3800",
+			"info": {
+				"age": 30,
+				"experience": 12
+			},
+			"methods": [
+				{
+					"key": "clinical",
+					"value": "Клиническая психология"
+				}
+			],
+			"problems": [
+				{
+					"key": "sleep",
+					"value": "Проблемы со сном"
+				},
+
+				{
+					"key": "panic-attacks",
+					"value": "Панические атаки"
+				},
+
+				{
+					"key": "self-search",
+					"value": "Поиск себя"
+				},
+
+				{
+					"key": "loneliness",
+					"value": "Чувство одиночества"
+				},
+
+				{
+					"key": "exhaustion",
+					"value": "Упадок сил"
+				},
+
+				{
+					"key": "incomprehensible-emotions",
+					"value": "Непонятные эмоции"
+				},
+
+				{
+					"key": "eating-behavior",
+					"value": "Пищевое поведение"
+				}
+			]
+		},
+
+		{
+			"id": 3,
+			"name": "Евгения",
+			"pic": "https://raw.githubusercontent.com/doshirakfood/vnorme/main/storage/03.jpg",
+			"price": "3800",
+			"info": {
+				"age": 30,
+				"experience": 11
+			},
+			"methods": [
+				{
+					"key": "clinical",
+					"value": "Клиническая психология"
+				},
+
+				{
+					"key": "аст-cft",
+					"value": "Принятие и ответственности (АСТ) / Сфокусирование на сострадании (CFT)"
+				},
+
+				{
+					"key": "psychodynamic",
+					"value": "Психодинамические подходы"
+				},
+
+				{
+					"key": "cpt-cbt",
+					"value": "КПТ/КБТ: Когнитивно-поведенческая терапия"
+				}
+			],
+			"problems": [
+				{
+					"key": "sleep",
+					"value": "Проблемы со сном"
+				},
+
+				{
+					"key": "panic-attacks",
+					"value": "Панические атаки"
+				},
+
+				{
+					"key": "self-search",
+					"value": "Поиск себя"
+				},
+
+				{
+					"key": "loneliness",
+					"value": "Чувство одиночества"
+				},
+
+				{
+					"key": "exhaustion",
+					"value": "Упадок сил"
+				},
+
+				{
+					"key": "incomprehensible-emotions",
+					"value": "Непонятные эмоции"
+				},
+
+				{
+					"key": "eating-behavior",
+					"value": "Пищевое поведение"
+				}
+			]
+		},
+
+		{
+			"id": 4,
+			"name": "Татьяна",
+			"pic": "https://raw.githubusercontent.com/doshirakfood/vnorme/main/storage/04.jpg",
+			"price": "3800",
+			"info": {
+				"age": 30,
+				"experience": 8
+			},
+			"methods": [
+				{
+					"key": "psychodynamic",
+					"value": "Психодинамические подходы"
+				},
+
+				{
+					"key": "jungian-analysis",
+					"value": "Аналитическая психология (Юнгианский анализ)"
+				},
+
+				{
+					"key": "emdr",
+					"value": "EMDR: Десенсибилизация и переработка движением глаз"
+				}
+			],
+			"problems": [
+				{
+					"key": "sleep",
+					"value": "Проблемы со сном"
+				},
+
+				{
+					"key": "panic-attacks",
+					"value": "Панические атаки"
+				},
+
+				{
+					"key": "self-search",
+					"value": "Поиск себя"
+				},
+
+				{
+					"key": "loneliness",
+					"value": "Чувство одиночества"
+				},
+
+				{
+					"key": "exhaustion",
+					"value": "Упадок сил"
+				},
+
+				{
+					"key": "incomprehensible-emotions",
+					"value": "Непонятные эмоции"
+				},
+
+				{
+					"key": "eating-behavior",
+					"value": "Пищевое поведение"
+				}
+			]
+		},
+
+		{
+			"id": 5,
+			"name": "Николай",
+			"pic": "https://raw.githubusercontent.com/doshirakfood/vnorme/main/storage/05.jpg",
+			"price": "3800",
+			"info": {
+				"age": 30,
+				"experience": 5
+			},
+			"methods": [
+				{
+					"key": "cpt-cbt",
+					"value": "КПТ/КБТ: Когнитивно-поведенческая терапия"
+				}
+			],
+			"problems": [
+				{
+					"key": "sleep",
+					"value": "Проблемы со сном"
+				},
+
+				{
+					"key": "panic-attacks",
+					"value": "Панические атаки"
+				},
+
+				{
+					"key": "self-search",
+					"value": "Поиск себя"
+				},
+
+				{
+					"key": "loneliness",
+					"value": "Чувство одиночества"
+				},
+
+				{
+					"key": "exhaustion",
+					"value": "Упадок сил"
+				},
+
+				{
+					"key": "incomprehensible-emotions",
+					"value": "Непонятные эмоции"
+				},
+
+				{
+					"key": "eating-behavior",
+					"value": "Пищевое поведение"
+				}
+			]
+		},
+
+		{
+			"id": 6,
+			"name": "Анастасия",
+			"pic": "https://raw.githubusercontent.com/doshirakfood/vnorme/main/storage/06.jpg",
+			"price": "3800",
+			"info": {
+				"age": 30,
+				"experience": 4
+			},
+			"methods": [
+				{
+					"key": "emdr",
+					"value": "EMDR: Десенсибилизация и переработка движением глаз"
+				},
+
+				{
+					"key": "clinical",
+					"value": "Клиническая психология"
+				},
+
+				{
+					"key": "cpt-cbt",
+					"value": "КПТ/КБТ: Когнитивно-поведенческая терапия"
+				}
+			],
+			"problems": [
+				{
+					"key": "sleep",
+					"value": "Проблемы со сном"
+				},
+
+				{
+					"key": "panic-attacks",
+					"value": "Панические атаки"
+				},
+
+				{
+					"key": "self-search",
+					"value": "Поиск себя"
+				},
+
+				{
+					"key": "loneliness",
+					"value": "Чувство одиночества"
+				},
+
+				{
+					"key": "incomprehensible-emotions",
+					"value": "Непонятные эмоции"
+				},
+
+				{
+					"key": "eating-behavior",
+					"value": "Пищевое поведение"
+				}
+			]
+		},
+
+		{
+			"id": 7,
+			"name": "Светлана",
+			"pic": "https://raw.githubusercontent.com/doshirakfood/vnorme/main/storage/07.jpg",
+			"price": "3800",
+			"info": {
+				"age": 30,
+				"experience": 4
+			},
+			"methods": [
+				{
+					"key": "gestalt",
+					"value": "Гештальт-терапия"
+				},
+				{
+					"key": "art",
+					"value": "Арт-терапия"
+				},
+				{
+					"key": "cpt-cbt",
+					"value": "КПТ/КБТ: Когнитивно-поведенческая терапия"
+				}
+			],
+			"problems": [
+				{
+					"key": "sleep",
+					"value": "Проблемы со сном"
+				},
+
+				{
+					"key": "panic-attacks",
+					"value": "Панические атаки"
+				},
+
+				{
+					"key": "self-search",
+					"value": "Поиск себя"
+				},
+
+				{
+					"key": "loneliness",
+					"value": "Чувство одиночества"
+				},
+
+				{
+					"key": "exhaustion",
+					"value": "Упадок сил"
+				},
+
+				{
+					"key": "incomprehensible-emotions",
+					"value": "Непонятные эмоции"
+				},
+
+				{
+					"key": "eating-behavior",
+					"value": "Пищевое поведение"
+				}
+			]
+		}
+	]
+}

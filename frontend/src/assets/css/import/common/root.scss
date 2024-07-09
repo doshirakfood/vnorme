@@ -1,0 +1,42 @@
+:root {
+	/* COLORS */
+	--color-brand: #{$brand};
+	--color-white: #{$white};
+	--color-black: #{$black};
+	--color-red: #{$red};
+	--color-dark: #{$dark};
+	--color-darker: #{$darker};
+	--color-grey-light: #{$green-light};
+	--color-grey-lighter: #{$grey-lighter};
+	--color-grey-medium: #{$grey-medium};
+	--color-grey-dark: #{$grey-dark};
+	--color-green-dark: #{$green-dark};
+	--color-green-lighter: #{$green-lighter};
+	--color-hover-primary: #{$hover-primary};
+	--color-hover-secondary: #{$hover-secondary};
+	--color-hover-tertiary: #{$hover-tertiary};
+	--color-press-primary: #{$press-primary};
+	--color-press-secondary: #{$press-secondary};
+
+	// -- Common --
+	--color-outline: #{$outline};
+	--color-disabled: #{$text-disabled};
+	--color-placeholder: #{$placeholder};
+
+	// -- Background color --
+	--bg-primary: #{$bg-primary};
+	--bg-secondary: #{$bg-secondary};
+	--bg-disabled: #{$bg-disabled};
+	--bg-overlay: #{$bg-overlay};
+
+
+	/* TYPOGRAPHY */
+	--font-family: #{$font-family};
+	--font-size-medium: #{$font-size-medium};
+	--line-height-medium: #{$line-height-medium};
+
+
+	/* OTHERS */
+	--grid-columns: #{$grid-columns};
+	--grid-gap: #{$grid-gap};
+}

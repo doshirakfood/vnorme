@@ -1,0 +1,33 @@
+/* eslint-env node */
+{
+	"env": {
+		"node": true,
+		"browser": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:vue/vue3-recommended",
+		"prettier"
+	],
+	"globals": {},
+	"ignorePatterns": [
+		"vite.config.js",
+		"node_modules/*",
+		"dist/**/*",
+		"src/assets/libs/*"
+	],
+	"noInlineConfig": false,
+	"overrides": [
+		{
+			"files": ["src/**/*.js", "src/**/*.vue"]
+		}
+	],
+	"parser": "",
+	"parserOptions": {
+		"ecmaVersion": "latest"
+	},
+	"plugins": [],
+	"root": true,
+	"rules": {},
+	"settings": {}
+}

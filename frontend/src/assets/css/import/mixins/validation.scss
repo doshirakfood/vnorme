@@ -1,0 +1,44 @@
+@mixin is-valid($position: calc(100% - 16px), $posPad: 40px) {
+	padding-right: $posPad;
+	border-color: var(--color-success);
+
+	background-image: url('@base64/icon-check-success.svg');
+	background-repeat: no-repeat;
+	background-position: $position;
+	background-size: 16px 16px;
+
+	&:focus {
+		outline-color: var(--color-success);
+	}
+}
+
+@mixin is-invalid($position: calc(100% - 16px), $posPad: 40px) {
+	padding-right: $posPad;
+	border-color: var(--color-danger);
+
+	background-image: url('@base64/icon-error-red.svg');
+	background-repeat: no-repeat;
+	background-position: $position;
+	background-size: 16px 16px;
+
+	&:focus {
+		outline-color: var(--color-danger);
+	}
+}
+
+@mixin is-border-valid() {
+	border-color: var(--color-success);
+
+	&:focus {
+		outline-color: var(--color-success);
+	}
+}
+
+@mixin is-border-invalid($position: calc(100% - 16px), $posPad: 40px) {
+	border-color: var(--color-danger);
+
+	&:focus {
+		outline-color: var(--color-danger);
+	}
+}
+

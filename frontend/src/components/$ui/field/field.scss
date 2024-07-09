@@ -1,0 +1,17 @@
+.form {
+	&__field {
+		width: 100%;
+		padding: 10px 16px;
+		border: 2px solid var(--color-green-lighter);
+		border-radius: 40px;
+
+		&--search {
+			padding-left: 52px;
+
+			background-image: url('@base64/icon-search.svg');
+			background-repeat: no-repeat;
+			background-position: 18px center;
+			background-size: 20px 20px;
+		}
+	}
+}

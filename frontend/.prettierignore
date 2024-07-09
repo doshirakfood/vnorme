@@ -1,0 +1,12 @@
+**/assets
+**/libs
+.github
+package.json
+package-lock.json
+webpack.config.js
+vite.config.js
+README.md
+.babelrc
+.eslintrc.js
+.prettierignore
+.prettierrc.json
